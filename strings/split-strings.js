@@ -6,3 +6,21 @@
 
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
+
+
+let result = [];
+
+for (let i = 0; i < Math.ceil(str.length/2); i++){
+  let s = '';
+  for (let j = 0; j < 2; j++){
+    s += str.charAt(2*i  + j)
+  }
+  if(result[1]){
+    result.push(s)
+  } else {
+    s+= '_'
+    result.push()
+  }
+
+}
+  return result
